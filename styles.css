@@ -1,0 +1,48 @@
+:root{
+--mg:51px 1% 0 1%;
+--mg2:51px 5% 0% 5%;
+}
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+
+#editor{
+    background-color: whitesmoke;
+    display: block;
+    margin: auto ;
+    width: clamp(40%,90%,600px);
+    height: 250px;
+}
+#preview{
+    background-color: #F5F1ED;
+    margin:var(--mg);
+    margin-top: 0;
+    padding: 2em;
+    border: 1px solid #F5F1ED;
+}
+img{
+   width: clamp(300px,50%,400px);
+    display: block;
+    margin: auto;
+    
+}
+.toolbar{
+    margin: var(--mg);
+    width:98%;
+}
+
+
+@media only screen and (min-width:720px) {
+    #preview{
+        margin:var(--mg2);
+        margin-top: 0px;
+    }
+    .toolbar{
+        margin: var(--mg2);
+        width:90%;
+    }
+    
+}
